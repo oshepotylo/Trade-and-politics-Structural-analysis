@@ -1,0 +1,135 @@
+\section{Results}
+\subsection{Structural gravity}
+We present the impact of political relationships on trade with two sets of results in Table \ref{table:gravity1}. Using bilateral, time varying characteristics of political ties -- voting correlation in the UN (affinity of nations or ideal points difference) and military alliances allows us to estimate a structural gravity model with full set of fixed effects, which control for all bilateral, time-invariant characteristics (distance, common border, etc) and time-varying economy wide developments (represented by inward and outward multilateral resistance terms).
+
+\input{ps_elasticity_all_12July2019.tex}
+
+Model 1 estimates political determinants of extensive margins of trade. The dependent variable takes value of 1 if there is positive trade and 0 otherwise. The set of controls includes political, trade policy, geographical, and economic determinants. This equation is estimated by probit, marginal effects are reported and standard errors presented in brackets.  Model 2 is the gravity model where the dependent variable is the natural log of export and we use a full set of bilateral pair and exporter-year and importer-year fixed effects. Model 3 also controls for selection and heterogeneity of exports at the micro level using the methodology of \cite{helpman2008estimating}. Models 5-6 repeat the same models and estimation methods for ideal points differences as the measure of political dissimilarity. All standard errors are clustered at the country-pair level.
+
+We find that the affinity of nations, measured as the correlation in UN voting,  is robustly associated with bilateral exports with the expected positive signs both at extensive and intensive margins. A one unit increase in the affinity, which is the difference in voting correlations between  Israel-Iran and  UK-Chile, are associated with a 4.2 percent higher probability of positive trade and with 42 percent more trade (Model 3). Similarly, ideal points differences which measure how far countries are placed on political spectrum relative to the existing liberal world order are negatively associated with trade at extensive and intensive margins. Also, military defense alliances strongly promote trade among nations -- forming the alliance increases probability of positive trade by 4.3 percent and is associated with 22 percent higher trade (Model 6). Controlling for selection reduces the impact of political factors, because they are positively correlated with probability of having trade, which generates an upward bias in the regressions, which do not control for selection.
+
+\subsection{Institutions and growth}
+The impact of institutions on GDP is presented in this subsection. We assume a Cobb-Douglas production function with capital and labor, where human capital and institutions increase total factor productivity. All models include country specific, time invariant fixed effects. We use the natural log of real GDP, which is estimated based on output (Model 1) and expenditures (Model 2) as the dependent variable \citep{Feenstra2015TheTable}. In model 3, we first regress the natural log of real GDP estimated by output on capital and labor (Model 3) and then regress the residual on human capital and political stability. In all regressions, political stability is a strong determinant of a nation's productivity, with a one unit increase in political stability associated with 5-6 percent higher GDP. A one unit increase in political stability in 2015 is the difference between Iraq and India  or between Argentina and Sweden (on the higher end). In models (5)-(8) we repeat the same regression, but estimate them on data at 5-year intervals, to look at longer horizon changes and to reduce the attenuation bias that may be present in the fixed effect models.
+
+\input{growth_12July2019.tex}. 
+
+\subsection{UN voting and regional trade agreements}
+How does signing a free trade agreement influence a countries voting pattern in the UN? We use ideal points data \cite{Bailey2017EstimatingData}, which measure position of countries relative to the liberal political order established after world war II and the collapse of the Soviet Union. We also look at UN voting correlations (affinity of nations) to compare results. Our interest is whether signing a free trade agreement leads to closer political affinity. We use both panel data and propensity score matching techniques to see the strength of the relationship.
+
+We estimate the following model
+
+\begin{equation}
+    pa_{ijt}=\gamma \times RTA_{ijt}+D_{it}+D_{jt}+D_{ij}+\eta_{ijt}
+\end{equation}
+
+This specification looks at whether countries that sign regional trade agreements increase their political affinity and narrow the gap in their world view about the current liberal world order. We look at the contemporaneous (Model 1), lagged (Model 2) effects and also first differences (Model 3). We also instrument RTA with the sum of GDP, differences in GDP, and differences in factor endowments, as discussed in \cite{Baier2004}. We also repeat the same set of regressions for ideal points differences. Table \ref{table:affinity} presents the results. After singing an RTA, correlation in the UN voting increases by 0.06. The result is weaker if we look at the first differences and they lose significance if we instrument RTAs. However, for ideal points differences the effect is more robust and pronounced. Signing an RTA narrows the gap in the political views between trading partners by 0.6. The effect is very similar if we instrument RTAs (Model 8). 
+
+\input{affinity_12July2019.tex}
+
+We also use propensity score matching, as an alternative technique to investigate the impact of a regional trade agreement on political affinity of nations. We report results in 2015 (Columns 1 and 3) and for the whole sample (Columns 2 and 4). Having an RTA increases the voting correlation by 0.8-0.11 and narrows the gap in political world view by 0.17-0.28. The results are strongly significant.
+
+\input{psm_12July2019.tex}
+
+
+\subsection{Counterfactual analysis of trade flows and welfare analysis}
+
+\begin{table}
+    \begin{threeparttable} 
+    \centering
+    \caption{Change in export to China, percent by regions}
+    \label{tab:exp1}
+    \begin{tabular}{lcccccc}
+    \toprule
+    &\multicolumn{3}{c}{Conditional GE}&\multicolumn{3}{c}{Full GE}\\
+    & BRI & DA & PA & BRI & DA & PA \\
+    \midrule
+    \input{table5.tex}
+    \bottomrule
+    \end{tabular}
+    \begin{tablenotes}
+    \item Table presents changes in export in percent as a result of one of three counterfactual scenarios: belt and road initiative that reduce trade cost (BRI), political affinity (PA), or defense alliance (DA).
+    \end{tablenotes}
+    \end{threeparttable}
+\end{table}
+
+
+
+
+This section presents the results of our policy scenarios. Table \ref{tab:exp1} presents changes in exports to China by regions, measured in percentage change relative to status quo for three scenarios: reduction in transportation costs for BRI countries by 15\% (BRI), closer political ties as measured by correlation of UN voting (PA), and the creation of military defense alliances (DA) for conditional and general equilibrium. Under the PA scenario we assume that the ideal points difference between China and the BRI countries gets smaller as a result of participating in the BRI. We assume that the change equals 0.275, which is consistent with the result in Column (4) of Table \ref{table:affinity1}. This is a conservative assumption, since the changes are higher if we use estimates from Table \ref{table:affinity}. We also assume that this change translates into 11 percent lower exports, as shown in Column (6) of Table \ref{table:gravity1}. For the DA scenario, we assume that signing defence agreement increases trade by 30\% as consistent with estimates in Column (6) of Table \ref{table:gravity1}.
+
+\begin{longtable} {lcccccc}
+    \caption{Change in export to China, percent by BRI countries}
+    \label{tab:exp2}
+    \\
+    \hline
+    &\multicolumn{3}{c}{Conditional GE}&\multicolumn{3}{c}{Full GE} \\
+    & BRI & DA & PA & BRI & DA & PA \\
+    \hline
+    \endfirsthead
+    \multicolumn{7}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+    \hline
+    &\multicolumn{3}{c}{Conditional GE}&\multicolumn{3}{c}{Full GE}\\
+    & BRI & DA & PA & BRI & DA & PA \\
+    \hline
+\endhead
+
+\hline \multicolumn{7}{r}{{Continued on next page}} \\ 
+\hline
+\endfoot
+\hline \hline
+\endlastfoot
+    \input{table5a.tex}
+\end{longtable}
+
+Table \ref{tab:exp2} presents changes in exports to China from BRI countries, measured in percentage changes relative to status quo for three scenarios: reduction in transportation costs for BRI countries by 15\% (BRI), closer political ties as measured by correlation of UN voting (PA), and creation of military defense alliances (DA) for conditional and general equilibrium.
+
+
+\begin{table}
+    \begin{threeparttable} 
+    \centering
+    \caption{Average change in welfare, percent by regions}
+    \label{tab:welfare1}
+    \begin{tabular}{lcccccccc}
+    \toprule
+    &\multicolumn{4}{c}{Conditional GE}&\multicolumn{4}{c}{Full GE}\\
+    & BRI & DA & PA & PS & BRI & DA & PA & PS \\
+    \midrule
+    \input{table6.tex}
+    \bottomrule
+    \end{tabular}
+    \begin{tablenotes}
+    \item Table presents changes in welfare in percent as a result of one of four counterfactual scenarios: belt and road initiative that reduce trade cost (BRI), political affinity (PA), defense alliance (DA), or increase in political stability in BRI countries to the average level for the European and Central Asian region.
+    \end{tablenotes}
+    \end{threeparttable}
+\end{table}
+
+Table \ref{tab:welfare1} presents changes in welfare by regions, measured in percentage change relative to status quo for three scenarios: reduction in transportation costs for BRI countries by 15\% (BRI), closer political ties as measured by correlation of UN voting (PA), and creation of military defense alliances (DA) for the conditional and general equilibrium.
+
+\begin{longtable} {lcccccccc}
+    \caption{Change in welfare, percent by BRI countries}
+    \label{tab:welfare2}
+    \\
+    \hline
+    &\multicolumn{4}{c}{Conditional GE}&\multicolumn{4}{c}{Full GE} \\
+    & BRI & DA & PA & PS & BRI & DA & PA & PS \\
+    \hline
+    \endfirsthead
+    \multicolumn{9}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+    \hline
+    &\multicolumn{4}{c}{Conditional GE}&\multicolumn{4}{c}{Full GE}\\
+    & BRI & DA & PA & PS & BRI & DA & PA & PS\\
+    \hline
+\endhead
+
+\hline \multicolumn{9}{r}{{Continued on next page}} \\ 
+\hline
+\endfoot
+\hline \hline
+\endlastfoot
+    \input{table6a.tex}
+\end{longtable}
+
+Table \ref{tab:welfare2} presents changes in welfare in BRI countries, measured in percentage changes relative to status quo for four scenarios: reduction in transportation costs for BRI countries by 15\% (BRI), closer political ties as measured by correlation of UN voting (PA), creation of military defense alliance (DA), and political stability at a level equal to the average level of political stability in the European and Central Asian region for the conditional and general equilibrium.
+

@@ -1,0 +1,94 @@
+\section{The Model}
+\subsection{The setup}
+There are N countries, each producing a unique variety, $i$. Country $i$ is endowed with $L_i$ units of labor and $K_{i}$ units of capital. It also has a certain level of productivity, $A_i$, which depends, among other things, on human capital endowment and political stability, which is exogenous by assumption.  A representative consumer in country j  has a constant elasticity of substitution utility from consuming different varieties.
+\begin{equation}
+\label{eq:utility}
+    U_j=\left[ \sum_{i}  \left( \frac{C_{ij}}{\mu_{ij}} \right) ^{(\sigma-1)/\sigma} \right]^{\sigma/(\sigma-1)}
+\end{equation}
+where $\sigma$ is elasticity of substitution and $\mu_{ij}$ is a preference parameter, which depends on political relations between two countries.
+The consumer maximizes (\ref{eq:utility}) subject to the budget constraint
+\begin{equation}
+\label{eq:budget}
+\sum_{j}P_{ij}C_{ij}=E_{j}
+\end{equation}
+where $E$ is expenditures, $P_{ij}$ is price of product $i$ in country $j$ and $C$ is consumption. 
+
+Production is described by the Cobb-Douglas production function as given by
+\begin{equation}
+\label{eq: production}
+    Q_i=A_iK_i^{\alpha_K}L_i^{\alpha_L}\epsilon_{i}
+\end{equation}
+There is full employment and labor is supplied inelastically, while the level of capital is exogenously given. The error term $epsilon_{i}$ captures economy wide supply shocks, which are independent from the productivity process, given by
+
+\begin{equation}
+\label{eq:tfp}
+    \ln A_i=a_0 +a_1\times hc_i + a_2 \times ps_i + u_i
+ \end{equation}
+where $hc_i$ is the level of human capital accumulation and $ps_i$ is the measure of political stability. $u_i$ is a idiosyncratic productivity shock. 
+ 
+ 
+ To sell a variety produced in country $i$ to country $j$ incurs a trade cost:  $\tau_{ij}\ge 1$ units of good $i$ is required to deliver one unit of this good, with $\tau_{ij}=1$ only when $i=j$. In particular, we assume that trade cost is parametrically described as
+ 
+ \begin{equation}
+ \label{eq:tcost}
+    \tau^{1-\sigma}_{ij}=\exp(\gamma_{dist} \ln(dist_{ij})+\gamma_{pa_{ij}} pa_{ij}+Z_{ij} \gamma_Z) +e_{ij}
+ \end{equation}
+where $dist_{ij}$ is distance, $pa_ij$ is a bilateral political affinity of nations measure, and Z is the set of additional controls that capture bilateral trade costs. In our analysis, we use a full set of country-pair fixed effects, so only variable factors, such as regional trade agreements and trade policy are included.
+ 
+ \subsection{Equilibrium}
+ 
+ We start by noting the following:
+ 
+ \begin{equation}
+     \tilde{C}_{ij}= \left( \frac{C_{ij}}{\mu_{ij}} \right)
+ \end{equation}
+ and
+ 
+ \begin{equation}
+     \tilde{P}_{ij}=P_{ij} \times \mu_{ij}
+ \end{equation}
+ we end up with a standard model that is well-described in the literature. A consumer maximizes a symmetric utility function
+ 
+ \begin{equation}
+\label{eq:utility1}
+    U_j=\left[ \sum_{i} \tilde{C}_{ij}^{(\sigma-1)/\sigma} \right]^{\sigma/(\sigma-1)}
+\end{equation}
+subject to the budget constraint
+\begin{equation}
+\label{eq:budget1}
+\sum_{j}\tilde{P}_{ij}\tilde{C}_{ij}=E_{j}
+\end{equation}
+The global equilibrium is described by trade flows
+ 
+ \begin{equation}
+ \label{eq:export}
+ X_{ij}=\frac{Y_i E_J}{Y_w} \left ( \frac{\tau_{ij}}{\Omega_i P_j} \right )^{(1-\sigma)}
+ \end{equation}
+where the total value of output is either consumed internally or exported
+ 
+ \begin{equation}
+     \label{eq:gdp}
+     Y_i=P_iQ_i=\sum_{j}X_{ij}
+ \end{equation}
+where $P_i$ is price index of variety $i$.
+ 
+We also assume that current trade imbalances remain constant in both the current and counterfactual equilibria
+
+\begin{equation}
+    Y_i=\phi E_i
+\end{equation}
+The outward resistance term is given by
+
+\begin{equation}
+    \Omega_i^{1-\sigma}=\sum_{j} \frac{E_j}{Y_w} \left ( \frac{\tau_{ij}}{P_j} \right )^{1-\sigma}
+\end{equation}
+The inward resistance term is given by
+
+
+\begin{equation}
+    P_j^{1-\sigma}=\sum_{i} \frac{Y_i}{Y_w} \left ( \frac{\tau_{ij}}{\Omega_{j}} \right ) ^{1-\sigma}
+\end{equation}
+
+\subsection{Counterfactual analysis}
+
+We formulate counterfactual scenarios assuming changes in the level of political stability and bilateral political affinity as a result of the BRI, which influences production function through the productivity channel and trade through bilateral trade costs channel. The methodology is described in \cite{Anderson2018GEPPML:PPML} and we present the results of both conditional and full general equilibrium changes in trade and welfare.

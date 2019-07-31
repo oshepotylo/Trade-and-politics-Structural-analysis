@@ -1,79 +1,17 @@
-\documentclass[12pt]{article}
-
-\usepackage{amssymb,amsmath,amsfonts,eurosym,geometry,ulem,graphicx,caption,color,setspace,sectsty,comment,footmisc,caption,natbib,pdflscape,subfigure,threeparttable, array,hyperref,float,booktabs,ragged2e,longtable,filecontents}
+\documentclass{article}
+\usepackage{amssymb,amsmath,amsfonts,eurosym,geometry,ulem,graphicx,caption,color,setspace,sectsty,comment,footmisc,caption,natbib,pdflscape,subfigure,array,hyperref,float,booktabs,ragged2e,longtable,filecontents}
 \usepackage[utf8]{inputenc}
 \usepackage{array}
 
-\normalem
-
-\onehalfspacing
-\newtheorem{theorem}{Theorem}
-\newtheorem{corollary}[theorem]{Corollary}
-\newtheorem{proposition}{Proposition}
-\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
-
-\newtheorem{hyp}{Hypothesis}
-\newtheorem{subhyp}{Hypothesis}[hyp]
-\renewcommand{\thesubhyp}{\thehyp\alph{subhyp}}
-
-\newcommand{\red}[1]{{\color{red} #1}}
-\newcommand{\blue}[1]{{\color{blue} #1}}
-
-\newcolumntype{L}[1]{>{\raggedright\let\newline\\arraybackslash\hspace{0pt}}m{#1}}
-\newcolumntype{C}[1]{>{\centering\let\newline\\arraybackslash\hspace{0pt}}m{#1}}
-\newcolumntype{R}[1]{>{\raggedleft\let\newline\\arraybackslash\hspace{0pt}}m{#1}}
-
-\geometry{left=1.0in,right=1.0in,top=1.0in,bottom=1.0in}
+\title{Table}
+\author{drkarenjackson }
+\date{December 2018}
 
 \begin{document}
 
-\begin{titlepage}
-
-\title{Risky business: Political stability along the Belt and Road}
-\author{Karen Jackson\thanks{Westminster Business School, University of Westminster, 35 Marylebone Road, London NW1 5LS, UK} 
-\and 
-Oleksandr Shepotylo \thanks{Aston Business School, Aston University, Birmingham, B4 7ET, UK}}
-
-
-
-
-\date{Draft: \today}
 \maketitle
-\begin{abstract}
-\noindent This paper investigates how the Belt and Road initiative combined with the more assertive and active foreign policy of China would impact on global trade flows and global welfare. The BRI benefits come from reduced trade costs, reduced bilateral political uncertainty, military alliances, and more political stability in BRI countries. In the full general equilibrium, the impact of the BRI on China would be 1.81\% increase in welfare, while globally, there would be 0.49\% increase in welfare. More aligned political worldviews would boost welfare in China by 0.45\% and globally by 0.12\%.  Forming defense alliances would be the most beneficial, increasing welfare in China by 4.11\%. Finally, higher political stability would boost welfare in the Middle East by 4.12\% and in South Asia by 8.82\%.
-\\
-\vspace{0in}\\
-\noindent\textbf{Keywords:} Belt and Road Initiative, political risk, Gravity model, trade, FDI\\
-\vspace{0in}\\
-\noindent\textbf{JEL Codes:} F14, F15\\
 
-\bigskip
-\end{abstract}
-\setcounter{page}{0}
-\thispagestyle{empty}
-\end{titlepage}
-
-\doublespacing
-
-\input{introduction.tex}
-\input{literature.tex}
-\input{model.tex}
-\input{scenarios.tex}
-\input{data.tex}
-\input{results.tex}
-\input{conclusion.tex}
-
-
-\bibliographystyle{apalike}
-\bibliography{refs,refs2}
-
-
-\clearpage
-\appendix
-\input{tableA2.tex}
-%\input{table.tex}
-
-\section{List of BRI projects}
+\section{Introduction}
 
 \begin{center}
 \begin{landscape}
@@ -84,7 +22,7 @@ Oleksandr Shepotylo \thanks{Aston Business School, Aston University, Birmingham,
 \endfirsthead
 
 \multicolumn{4}{c}%
-{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\ %it was bfseries
+{{\series \tablename\ \thetable{} -- continued from previous page}} \\ %it was bfseries
 \hline \multicolumn{1}{c}{\text{Project}} & \multicolumn{1}{c}{\text{Location 1}} & \multicolumn{1}{c}{\text{Location 2}}& \multicolumn{1}{c}{\text{Type}} \\ \hline 
 \endhead
 
@@ -129,19 +67,19 @@ Dhaka-Jessore Rail Line Construction	&	Bangladesh	&		&	Rail	\\	\hline
 Kuala Lumpur-Tumpat Railway (Construction)	&	Malaysia	&		&	Rail	\\	\hline
 East West Corridor	&	Qatar	&		&	Road	\\	\hline
 Hami-Ejin Railway Ejin-Hami Part (Construction)	&	China 	&		&	Rail	\\	\hline
-ML1 Karachi-Lahore-Peshawar Rail Line (Expansion \& Restoration)	&	Pakistan	&		&	Rail	\\	\hline
+ML1 Karachi-Lahore-Peshawar Rail Line (Expansion & Restoration)	&	Pakistan	&		&	Rail	\\	\hline
 G3012 Turpan–Hotan Expressway	&	China 	&		&	Road	\\	\hline
 G3013 Kashgar-Irkeshtam Expressway	&	China 	&		&	Road	\\	\hline
 G314 National Road	&	China 	&		&	Road	\\	\hline
 G6 Beijing-Lhasa Expressway	&	China 	&		&	Road	\\	\hline
-Gemas-Johor Bahru Rail (Double Tracking \& Electrification)	&	Malaysia	&		&	Rail	\\	\hline
+Gemas-Johor Bahru Rail (Double Tracking & Electrification)	&	Malaysia	&		&	Rail	\\	\hline
 Golmud-Korla Railway	&	China 	&		&	Rail	\\	\hline
 Gunturharjo Container Terminal (Construction)	&	Indonesia	&		&	Seaport	\\	\hline
 Gwadar Port East Bay Expressway (Construction)	&	Pakistan	&		&	Road	\\	\hline
 Gwadar Port Breakwater (Construction)	&	Pakistan	&		&	Seaport	\\	\hline
 Gwadar Port (Freshwater Treatment and Supply)	&	Pakistan	&		&	Seaport	\\	\hline
-Gwadar Port Dredging of Berthing Areas \& Channels (Construction)	&	Pakistan	&		&	Seaport	\\	\hline
-Gwadar Port (Infrastucture for Free Zone \& EPZs Port related Industries)	&	Pakistan	&		&	Seaport	\\	\hline
+Gwadar Port Dredging of Berthing Areas & Channels (Construction)	&	Pakistan	&		&	Seaport	\\	\hline
+Gwadar Port (Infrastucture for Free Zone & EPZs Port related Industries)	&	Pakistan	&		&	Seaport	\\	\hline
 Gwadar - Turbat - Hoshab Section (200 km)	&	Pakistan	&		&	Road	\\	\hline
 Haifa Bay Port (Construction)	&	Israel	&		&	Seaport	\\	\hline
 Hakla-Dera Ismail Khan Motorway (Construction)	&	Pakistan	&		&	Road	\\	\hline
@@ -154,7 +92,7 @@ Havelian Dry Port (Construction)	&	Pakistan	&		&	Intermodal	\\	\hline
 Havelian - Thakot Karakoram Highway Phase II (Construction)	&	Pakistan	&		&	Road	\\	\hline
 Hefei-Fuzhou Railway (Construction)	&	China 	&		&	Rail	\\	\hline
 Hong Kong-Zhuhai-Macau Bridge (Construction)	&	China 	&		&	Road	\\	\hline
-China-Pakistan Economic Corridor Hoshab - Basima - Sorab Highway (Upgradation \& Construction)	&	Pakistan	&		&	Road	\\	\hline
+China-Pakistan Economic Corridor Hoshab - Basima - Sorab Highway (Upgradation & Construction)	&	Pakistan	&		&	Road	\\	\hline
 Huawei Logistics Centre (Biatorbágy)	&	Hungary	&		&	Intermodal	\\	\hline
 Jakarta Monorail Project, Jakarta (Special City District)	&	Indonesia	&		&	Rail	\\	\hline
 Kamchay Hydroelectric Power Plant	&	Cambodia	&		&		\\	\hline
@@ -227,5 +165,7 @@ Zhob - Mughalkot Road (Rehabilitation)	&	Pakistan	&		&	Road	\\	\hline
 \end{landscape}
 %\footnotesize{Notes: xxxxx.}
 \end{center}
+
+
 
 \end{document}
